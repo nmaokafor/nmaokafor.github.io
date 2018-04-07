@@ -1,0 +1,242 @@
+.navbar-default {
+    background-color: #af092b;
+    border-radius: black;
+    padding: 10px;
+    font-size: 19px;
+	margin-bottom: 0px;
+	font-family: 'Oswald', sans-serif;
+/*	box-shadow: 0px 2px 20px 0px grey;
+	/*position: fixed;
+	z-index: 1;*/
+}
+.navbar-brand{
+	padding: 8px 30px;
+}
+.navbar-brand > img{
+	height: 40px;
+}
+.navbar-nav{
+	padding-left: 50px;
+}
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > li {
+	padding-right: 10px;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus {
+    background-color: transparent;
+    color: #e9d016;
+ }
+ .navbar-default .navbar-nav > li > a:hover{
+ 	color: black;
+ 	background-color: #e9d016;
+ }
+.navbar-default .navbar-nav > .active > a:hover{
+	color: black;
+ 	background-color: #e9d016;
+}
+/*.navbar-default .navbar-nav > li > a:visited{
+	color: black;
+ 	background-color: #e9d016;
+}*/
+.btn-default1{
+	color: white;
+	background-color: #561a1a;
+	border-color: white;
+	border-radius: 7px;
+	padding: 5px 25px;
+}
+.btn-default1:hover{
+	background-color: #e9d016;
+	border: none;
+	color: black
+}
+.navbar-header{
+	padding-right: 10%;
+}
+.navbar-right ~ .navbar-right{
+	margin-right: 10px;
+}
+.header-image{
+	height: 85vh;
+	width: 100%;
+	text-align: center;
+}
+.picone{
+	position: absolute;
+	background-image: url('../img/survivor.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: inherit;
+	height: inherit;
+}
+.image-overlay{
+	width: inherit;
+	height: inherit;
+	position: absolute;
+	background-color: black;
+	opacity: 0.6;
+}
+.textone{
+	color: yellow;
+	position: absolute;
+	top: 40%;
+	left: 22%;
+	text-align: justify;
+	font-family: 'Neuton', serif;
+}
+.help{
+	font-size: 50px;
+}
+.texttwo{
+	text-align: left;
+	font-size: 20px;
+}
+.bg1{
+	background-color: white;
+}
+.textthree{
+	color: black;
+	margin-top: 7.2vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	margin-bottom: 7.2vh;
+	text-align: center;
+	font-family: 'Goudy Bookletter 1911', serif;
+}
+.headchange{
+	font-size: 20px;
+	line-height: 25px
+
+}
+.para1{
+	font-size: 17px;
+	margin-top: 10px;
+}
+.firstB{
+	margin-top: 10px;
+	margin-bottom: 0px;
+	margin-right: 15px;
+	/*padding: 0px 7px;*/
+	font-size: 25px;
+	color: white;
+	background-color: #1f074d;
+	border-color: black;
+	border-radius: 7px;
+	padding: 5px 25px;
+}
+.firstB:hover{
+	background-color: #e9d016;
+	border: none;
+	color: black
+}
+/*.projects{
+	height: 25vh;
+	width: 80%;
+}*/
+.cont1{
+	position: relative;
+    text-align: left;
+    color: white;
+    background-color: transparent;
+}
+.cont11{
+	position: absolute;
+    bottom: 2%;
+    left: 4%;
+}
+.cont11 >h4{
+    font-family: 'Crete Round', serif;
+	color: #140b0b;
+	background-color: #f0e1e166;
+	padding: 10px;
+	font-size: 25px;
+}
+.borde{
+	padding: 2px;
+	border: 2px white;
+}
+.secondB{
+	color: white;
+	background-color: #1f074d;
+	border-color: black;
+	border-radius: 7px;
+	padding: 5px 25px;
+}
+.secondB:hover{
+	background-color: #e9d016;
+	border: none;
+	color: black;
+}
+.img1{ 
+	width: 100%;
+	height: 100%;
+	margin: 0px;
+
+}
+.slider1 >h1{
+	font-family: 'Neuton', serif;
+	color: #f6eae8;
+	text-align: center;
+	padding: 6px;
+	margin: 2% 6% 0px 6%;
+	background-color: #232121;
+
+
+}
+.item{
+	height: 70vh;
+}
+.footer1{
+	background-color: #af092b;
+	padding: 20px;
+}
+.footer2{
+	padding-left: 50px;
+}
+.footer2 > h4{
+	color: #e9d016;
+	font-family: 'Neuton', serif;
+	font-size: 30px;
+}
+.footer2 > img{
+	height: 70%;
+	width: 70%;
+	padding-top: 10px;
+
+}
+.list1{
+	list-style-type: none;
+	padding: 0px;
+}
+.list1 > li > a{
+	color: white;
+}
+/*about us page styling starts here*/
+
+.back1{
+	background-image: url('../img/protest.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	width: inherit;
+	height: inherit;
+}
+.align1{
+	text-align: center;
+}
+.about1{
+	height: 220px;
+    padding-top: 20px;
+}
+.align2 > h3{
+	text-align: center;
+}
+.align2{
+	margin: 0 15%;
+	padding: 5%;
+	background-color: #e9d016e6; 
+}
+}
