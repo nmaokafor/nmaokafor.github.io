@@ -32,14 +32,18 @@
  	color: black;
  	background-color: #e9d016;
  }
+.navbar-default .navbar-nav > .active > a:visited {
+	background-color: transparent;
+    color: #e9d016;
+}
 .navbar-default .navbar-nav > .active > a:hover{
 	color: black;
  	background-color: #e9d016;
 }
-/*.navbar-default .navbar-nav > li > a:visited{
-	color: black;
- 	background-color: #e9d016;
-}*/
+.navbar-default .navbar-nav > li > a:visited{
+	color: white;
+ 	background-color: transparent;
+}
 .btn-default1{
 	color: white;
 	background-color: #561a1a;
@@ -183,8 +187,6 @@
 	padding: 6px;
 	margin: 2% 6% 0px 6%;
 	background-color: #232121;
-
-
 }
 .item{
 	height: 70vh;
@@ -205,7 +207,6 @@
 	height: 70%;
 	width: 70%;
 	padding-top: 10px;
-
 }
 .list1{
 	list-style-type: none;
@@ -231,12 +232,54 @@
 	height: 220px;
     padding-top: 20px;
 }
-.align2 > h3{
+.head1{
 	text-align: center;
+	font-family: 'Neuton', serif;
+	font-weight: 400;
+}
+.head2{
+	font-weight: 600;
+	border-bottom: 2px dashed #f01c0c;
+	padding-bottom: 10px;
+	font-family: 'Neuton', serif;
 }
 .align2{
 	margin: 0 15%;
 	padding: 5%;
-	background-color: #e9d016e6; 
+	background-color: #e9d016e6;
+	border: 5px solid #782020;
+	line-height: 2;
 }
+.para1{
+	font-family: 'Neuton', serif;
+    font-size: 18px;
+}
+/*styling for volunteer page starts here*/
+.voln1{
+	margin: 40px;
+}
+.voln2{
+	border: 4px dashed #f01c0c;
+	border-right: 0px;
+	border-bottom: 0px;
+	margin-bottom: 30px;
+}
+.voln3{
+	width: 30%;
+	padding: 13px;
+}
+.voln4{
+	height: 250px;
+}
+.voln5{
+	width: 70%;
+    padding: 0 20px;
+    line-height: 1.7;
+    font-size: 21px;
+    font-family: 'Neuton', serif;
+}
+.voln2a{
+	border: 4px dashed #f01c0c;
+	border-left: 0px;
+	border-bottom: 0px; 
 }
