@@ -1,3 +1,9 @@
+
+@font-face {
+  font-family: 'futuraPT';
+  src: url("css/fonts/FuturaPTBold.otf");  
+
+}
 .navbar-default {
     background-color: #af092b;
     border-radius: black;
@@ -5,11 +11,11 @@
     font-size: 19px;
 	margin-bottom: 0px;
 	font-family: 'Oswald', sans-serif;
-/*	box-shadow: 0px 2px 20px 0px grey;
+	/*	box-shadow: 0px 2px 20px 0px grey;
 	/*position: fixed;
 	z-index: 1;*/
 }
-.navbar-brand{
+.navbar-brand {
 	padding: 8px 30px;
 }
 .navbar-brand > img{
@@ -18,31 +24,23 @@
 .navbar-nav{
 	padding-left: 50px;
 }
-.navbar-default .navbar-nav > li > a {
-    color: #ffffff;
-}
 .navbar-default .navbar-nav > li {
 	padding-right: 10px;
 }
-.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-default .navbar-nav > .active > a:focus {
+.navbar-default .navbar-nav > li > a {
+    color: #ffffff;
+}
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus {
     background-color: transparent;
     color: #e9d016;
  }
- .navbar-default .navbar-nav > li > a:hover{
+.navbar-default .navbar-nav > li > a:hover{
  	color: black;
  	background-color: #e9d016;
  }
-.navbar-default .navbar-nav > .active > a:visited {
-	background-color: transparent;
-    color: #e9d016;
-}
 .navbar-default .navbar-nav > .active > a:hover{
 	color: black;
  	background-color: #e9d016;
-}
-.navbar-default .navbar-nav > li > a:visited{
-	color: white;
- 	background-color: transparent;
 }
 .btn-default1{
 	color: white;
@@ -59,13 +57,15 @@
 .navbar-header{
 	padding-right: 10%;
 }
-.navbar-right ~ .navbar-right{
+.navbar-right {
 	margin-right: 10px;
 }
+
 .header-image{
 	height: 85vh;
 	width: 100%;
 	text-align: center;
+	position: relative;
 }
 .picone{
 	position: absolute;
@@ -79,16 +79,17 @@
 .image-overlay{
 	width: inherit;
 	height: inherit;
-	position: absolute;
+	position: relative;
 	background-color: black;
 	opacity: 0.6;
 }
 .textone{
 	color: yellow;
 	position: absolute;
-	top: 40%;
-	left: 22%;
-	text-align: justify;
+	top: 25%;
+	left: 15%;
+	width: 50%;
+	text-align: center;
 	font-family: 'Neuton', serif;
 }
 .help{
@@ -113,43 +114,53 @@
 .headchange{
 	font-size: 20px;
 	line-height: 25px
-
 }
 .para1{
-	font-size: 17px;
+	font-size: 12px;
 	margin-top: 10px;
 }
 .firstB{
 	margin-top: 10px;
 	margin-bottom: 0px;
 	margin-right: 15px;
-	/*padding: 0px 7px;*/
 	font-size: 25px;
 	color: white;
 	background-color: #1f074d;
 	border-color: black;
 	border-radius: 7px;
 	padding: 5px 25px;
+	text-decoration: none;
 }
+/*.firstB{
+	text-decoration: none;
+	color: white;
+}*	background-color: #e9d016;
+	border: none;
+	color: black;
+	text-decoration: none;
+}*/
 .firstB:hover{
 	background-color: #e9d016;
 	border: none;
-	color: black
+	color: black;
+	text-decoration: none;
 }
-/*.projects{
+.projects{
 	height: 25vh;
 	width: 80%;
-}*/
+}
 .cont1{
 	position: relative;
     text-align: left;
     color: white;
     background-color: transparent;
+    padding: 0px;
 }
 .cont11{
 	position: absolute;
     bottom: 2%;
     left: 4%;
+    margin-bottom: 10px;
 }
 .cont11 >h4{
     font-family: 'Crete Round', serif;
@@ -173,23 +184,28 @@
 	background-color: #e9d016;
 	border: none;
 	color: black;
+	text-decoration: none;
 }
 .img1{ 
 	width: 100%;
 	height: 100%;
 	margin: 0px;
-
+}
+.slider1{
+	padding: 0px;
 }
 .slider1 >h1{
 	font-family: 'Neuton', serif;
-	color: #f6eae8;
+	color: #fff;
 	text-align: center;
 	padding: 6px;
-	margin: 2% 6% 0px 6%;
+	width: 30%;
+	margin: 2% 6% 0% 0%;
 	background-color: #232121;
+	display: inline-block;
 }
-.item{
-	height: 70vh;
+.slider1 .carousel-inner{
+	height: 90vh;
 }
 .footer1{
 	background-color: #af092b;
@@ -250,36 +266,49 @@
 	border: 5px solid #782020;
 	line-height: 2;
 }
+.align3{
+	margin: 0 10%;
+	padding: 5%;
+	background-color: #e9d016e6;
+	border: 5px solid #782020;
+	line-height: 2;
+}
 .para1{
 	font-family: 'Neuton', serif;
     font-size: 18px;
 }
 /*styling for volunteer page starts here*/
-.voln1{
-	margin: 40px;
-}
 .voln2{
-	border: 4px dashed #f01c0c;
-	border-right: 0px;
-	border-bottom: 0px;
+	border-bottom: 2px solid #782020;
 	margin-bottom: 30px;
-}
-.voln3{
-	width: 30%;
+	width: 100%;
 	padding: 13px;
 }
-.voln4{
-	height: 250px;
+.voln3{
+	width: 100%;
+	height: auto;
 }
-.voln5{
-	width: 70%;
-    padding: 0 20px;
+.voln4{
+    margin: 10px 0px;
+    text-align: justify;
     line-height: 1.7;
     font-size: 21px;
     font-family: 'Neuton', serif;
 }
-.voln2a{
-	border: 4px dashed #f01c0c;
-	border-left: 0px;
-	border-bottom: 0px; 
+.voln4 a{
+	padding: 10px; 
+	color: white;
+	background-color: #0a0707cc;
+	border-color: white;
+	border-radius: 7px;
+	font-family: 'Neuton', serif;
+	font-size: 18px;
+}
+.voln4 a:hover{
+	background-color: #e9d016;
+	border: none;
+	color: black;
+}
+textarea.form-control{
+	height: 70vh;
 }
