@@ -1,45 +1,118 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
+  <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SupplyAid</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
     <style>
-		@import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Crete+Round|Neuton|Oswald');
-	</style> 
+    @import url('https://fonts.googleapis.com/css?family=Goudy+Bookletter+1911|Crete+Round|Neuton|Oswald');
+  </style> 
 </head>
 
 <body>
 <!-- navbar start here -->
 <nav class="navbar navbar-default">
   <div class="container-fluid">
+   <a class="navbar-brand" href="index.html"><img src="img/supplyaid.png"></a>
     <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      <a class="navbar-brand" href="index.html"><img src="img/supplyaid.png"></a>
-    </div>
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+  </div>
 
-    <!-- Collect the nav links, forms, and other content for toggling -->
+  <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse change" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
-        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html">HOME<span class="sr-only">(current)</span></a></li>
         <li><a href="about.html">ABOUT</a></li>
         <li><a href="volunteer.html">VOLUNTEER</a></li>
         <li><a href="donate.html">DONATE</a></li>
-        <li class="active"><a href="connect-with-ngos.html">CONNECT WITH NGOS<span class="sr-only">(current)</span></a></li>
+        <li class="active"><a href="connect-with-ngos.html">CONNECT WITH NGOS</a></li>
       </ul>
-         <button type="button" class="btn btn-default1 navbar-right">NON-PROFITS <br>	APPLY HERE TO JOIN</button>
+
+       <button type="button" class="btn btn-default1 navbar-right">NON-PROFITS <br> APPLY HERE TO JOIN</button>
      <!--      <button type="button" class="btn btn-default navbar-right"></button> -->
     </div>
   </div>
 </nav>
+
+<!-- Page content starts here -->
+<div class="container-fluid back1">
+  <div class="align1">
+    <img src="img/supplyaid1.png" class="about1">
+  </div>
+    <br>
+
+    <div class="align3">
+      <form id="connectWithNgos" method="post" action="php/index.php" role="form">
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input id="firstName" name="firstName" type="text" placeholder="* Please enter your first name, or Anonymous." class="form-control" required="required" data-error="First name/Anonymous is required">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input id="lastName" name="lastName" type="text" placeholder="* Please enter your last name, or Anonymous." class="form-control" required="required" data-error="Last name/Anonymous is required">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="formEmail">Email Address *</label>
+              <input id="formEmail" name="formEmail" type="email" placeholder="* Please enter your valid email address." class="form-control" required="required" data-error="A valid email address is required">
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-6 col-lg-6">
+            <div class="form-group">
+              <label for="formSubject">Please select contact Subject *</label>
+              <select id="formSubject" class="form-control" required="required" name="formSubject">
+                <option>Other</option>
+                <option>Issues with Donation link</option>
+                <option>Join our team</option>
+                <option>Enquiries about NGOs</option>
+              </select>
+
+              <div class="help-block with-errors"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="form-group">
+              <label for="formMessage">Message *</label>
+              <textarea id="formMessage" class="form-control" name="formMessage" placeholder="* Write message here" rows="6" required="required" data-error="Please leave a message"></textarea>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+                    <input type="submit" class="btn btn-success btn-send" value="Send Message">
+                  </div>
+
+            <div class="col-sm-12 col-md-12 col-lg-12">
+            <p>
+              <strong>*</strong> These fields are required.</p>
+            </div>
+            <br>
+            <br>
+            <div id="submitMessage" class="hidden"></div>
+            </div>
+          </div>
+      </form>
+    </div>
 
 <!-- footer starts here -->
 <div class="container-fluid">
@@ -75,5 +148,14 @@
     </div>
   </div>
 </div>
+
+   <!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="js/bootstrap.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/1000hz-bootstrap-validator/0.11.9/validator.min.js" integrity="sha256-dHf/YjH1A4tewEsKUSmNnV05DDbfGN3g7NMq86xgGh8=" crossorigin="anonymous"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
